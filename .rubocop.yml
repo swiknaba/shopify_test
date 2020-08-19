@@ -1,9 +1,31 @@
+require:
+  - rubocop-rspec
+  - rubocop-performance
+  - rubocop-rails
+
 inherit_gem:
   rubocop-rails_config:
     - config/rails.yml
 
-# STYLE
+AllCops:
+  TargetRubyVersion: 2.6
+  NewCops: enable
+  Exclude:
+    - 'tmp/**/*'
+    - 'vendor/**/*'
+    - 'lib/**/*'
+    - 'config/**/*'
+    - 'spec/fixtures/**/*'
+    - 'bin/**/*'
+    - 'node_modules/**/*'
+    - 'spec/factories/**/*'
+
+# Style
 Style/StringLiterals:
   EnforcedStyle: single_quotes
 Style/FrozenStringLiteralComment:
   Enabled: false
+
+# Lint
+Lint/DuplicateMethods:
+  Enabled: true
