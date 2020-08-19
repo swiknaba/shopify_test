@@ -1,5 +1,5 @@
 module ShopifyAPI
   class Base < ActiveResource::Base
-    self.headers['User-Agent'] << " | ShopifyApp/#{ShopifyApp::VERSION} | Shopify App CLI"
+    headers['User-Agent'] << " | ShopifyApp/#{ShopifyApp::VERSION}"
   end
 end
