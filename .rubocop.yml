@@ -14,6 +14,7 @@ AllCops:
     - 'tmp/**/*'
     - 'vendor/**/*'
     - 'lib/**/*'
+    - 'db/**/*'
     - 'config/**/*'
     - 'spec/fixtures/**/*'
     - 'bin/**/*'
