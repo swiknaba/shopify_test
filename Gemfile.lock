@@ -117,7 +117,7 @@ GEM
     hashie (4.1.0)
     i18n (1.8.5)
       concurrent-ruby (~> 1.0)
-    jwt (2.2.1)
+    jwt (2.2.2)
     listen (3.2.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -273,7 +273,7 @@ GEM
       activeresource (>= 4.1.0, < 6.0.0)
       graphql-client
       rack
-    shopify_app (14.0.0)
+    shopify_app (14.1.0)
       browser_sniffer (~> 1.2.2)
       jwt (~> 2.2.1)
       omniauth-shopify-oauth2 (~> 2.2.2)
