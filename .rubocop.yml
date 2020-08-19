@@ -1,3 +1,9 @@
 inherit_gem:
   rubocop-rails_config:
     - config/rails.yml
+
+# STYLE
+Style/StringLiterals:
+  EnforcedStyle: single_quotes
+Style/FrozenStringLiteralComment:
+  Enabled: false
