@@ -22,7 +22,8 @@ gem 'webpacker'
 
 # utility
 gem 'amazing_print'
-gem 'oj' # super fast JSON parsing/dumping
+gem 'diffcrypt'
+gem 'oj'
 gem 'oj_mimic_json'
 
 # API

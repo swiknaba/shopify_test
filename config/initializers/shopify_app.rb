@@ -1,3 +1,6 @@
+ENV['SHOPIFY_API_KEY'] ||= Rails.application.credentials.shopify[:api_key]
+ENV['SHOPIFY_API_SECRET'] ||= Rails.application.credentials.shopify[:api_secret]
+
 ShopifyApp.configure do |config|
   config.application_name = "My Shopify App"
   config.api_key = ENV['SHOPIFY_API_KEY']
