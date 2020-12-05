@@ -1,27 +1,27 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.6.6'
+ruby '2.7.1'
 
 # rails
-gem 'bootsnap', '>= 1.4.2', require: false
-gem 'rails', '~> 6.0.3'
+gem 'bootsnap', '>= 1.4.8', require: false
+gem 'rails', '< 6.1'
 gem 'responders'
 
 # DB
 gem 'pg', '~> 1.2', '>= 1.2.3'
 
 # rack
-gem 'puma', '~> 4.3'
+gem 'puma', '~> 5.1'
 gem 'rack-cors', require: 'rack/cors'
 gem 'rack-www'
 
 # frontend
-gem 'sass-rails', '~> 6.0'
-gem 'webpacker', '~> 5.2', '>= 5.2.1'
+gem 'sass-rails'
+gem 'webpacker'
 
 # utility
-gem 'awesome_print'
+gem 'amazing_print'
 gem 'oj' # super fast JSON parsing/dumping
 gem 'oj_mimic_json'
 
@@ -32,7 +32,7 @@ gem 'blueprinter'
 group :tools do
   gem 'annotate'
   gem 'bundler-audit'
-  gem 'rubocop', '~> 0.89.1'
+  gem 'rubocop', '~> 1.5', '>= 1.5.2'
   gem 'rubocop-performance', require: false
   gem 'rubocop-rails', require: false
   gem 'rubocop-rails_config', require: false
@@ -64,4 +64,4 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
-gem 'shopify_app', '>=11.3.0'
+gem 'shopify_app', '~> 15.0'
