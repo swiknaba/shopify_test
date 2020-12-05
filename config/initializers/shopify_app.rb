@@ -2,7 +2,7 @@ ENV['SHOPIFY_API_KEY'] ||= Rails.application.credentials.shopify[:api_key]
 ENV['SHOPIFY_API_SECRET'] ||= Rails.application.credentials.shopify[:api_secret]
 
 ShopifyApp.configure do |config|
-  config.application_name = "My Shopify App"
+  config.application_name = 'Ludtest'
   config.api_key = ENV['SHOPIFY_API_KEY']
   config.secret = ENV['SHOPIFY_API_SECRET']
   config.old_secret = ""
@@ -10,7 +10,7 @@ ShopifyApp.configure do |config|
                                  # https://help.shopify.com/en/api/getting-started/authentication/oauth/scopes
   config.embedded_app = true
   config.after_authenticate_job = false
-  config.api_version = "2020-07"
+  config.api_version = '2020-10'
   config.shop_session_repository = 'Shop'
   config.allow_jwt_authentication = true
 end
