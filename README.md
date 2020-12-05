@@ -1,24 +1,9 @@
-# README
+There is a test store at which this app is installed for testing:
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+https://luds-test-store.myshopify.com/admin
 
-Things you may want to cover:
+Link to this app:
 
-* Ruby version
+https://partners.shopify.com/705750/apps/4641111
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+-> find all credentials in my private 1Password vault under "Shopify Partner Account".
